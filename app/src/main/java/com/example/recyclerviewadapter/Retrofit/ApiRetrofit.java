@@ -13,6 +13,6 @@ public interface ApiRetrofit {
     //metodod encargadoa de obetner toda la informacion
     //envia un request al servidor y devuelve una respuesta
     //creo una lista de mi modelo
-    @GET("posts")//indico operacion y de donde buscar en el servidor
+    @GET("posts.txt")//indico operacion y de donde buscar en el servidor
     Call<List<Posts>> getPost();
 }

@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 //si la respuesta no se pudo obtener ejemplo no esta autenticado para obetner la informacion
                 if (!response.isSuccessful()) {
                     int respuesta = response.code();
+                    textView.setText(String.valueOf(respuesta));
                     return;
                 }
                 //Gson parsea los datos automaticamente y mediante response.body extraemos los datos en la list
